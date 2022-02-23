@@ -1,4 +1,4 @@
-export const toSnakeCase = (phrase: string, delimiter = '-'): string => {
+export const toSnakeCase = (phrase: string, delimiter = '_'): string => {
   // convert to lowercases first
   const lowerCasedWords = phrase.toLowerCase();
 

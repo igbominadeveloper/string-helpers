@@ -9,4 +9,13 @@ describe('Snake case', () => {
 
     expect(snakeCaseWord).toBe(phraseInSnakeCase);
   });
+
+  it('picks the delimiter passed by a user', () => {
+    const phrase = 'I should be in snake case';
+    const phraseInSnakeCase = 'i-should-be-in-snake-case';
+
+    const snakeCaseWord = toSnakeCase(phrase, '-');
+
+    expect(snakeCaseWord).toBe(phraseInSnakeCase);
+  });
 });
