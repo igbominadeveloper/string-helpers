@@ -1,1 +1,1 @@
-export const toSnakeCase = (phrase: string): string => phrase.toLowerCase();
+export const toSnakeCase = (phrase: string): string => phrase.toUpperCase();
