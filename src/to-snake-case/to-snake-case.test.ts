@@ -18,4 +18,13 @@ describe('Snake case', () => {
 
     expect(snakeCaseWord).toBe(phraseInSnakeCase);
   });
+
+  it('it picks the default delimiter if an override is not passed', () => {
+    const phrase = 'I should be in snake case';
+    const phraseInSnakeCase = 'i_should_be_in_snake_case';
+
+    const snakeCaseWord = toSnakeCase(phrase);
+
+    expect(snakeCaseWord).toBe(phraseInSnakeCase);
+  });
 });
