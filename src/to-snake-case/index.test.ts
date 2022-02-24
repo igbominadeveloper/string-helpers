@@ -1,4 +1,4 @@
-import { toSnakeCase } from './to-snake-case';
+import { toSnakeCase } from '.';
 
 describe('Snake case', () => {
   it('converts word to snake case', () => {
