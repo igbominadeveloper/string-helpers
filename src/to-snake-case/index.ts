@@ -5,8 +5,11 @@ export const toSnakeCase = (phrase: string, delimiter = '_'): string => {
   // split the string into an array of words
   const words = lowerCasedWords.split(' ');
 
+  // remove all empty strings
+  const filteredWords = words.filter(Boolean);
+
   // separate the words by underscores or whatever the separator is passed by the user
 
   // return the joined words
-  return words.join(delimiter);
+  return filteredWords.join(delimiter);
 };
