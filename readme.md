@@ -74,3 +74,17 @@ const beforeLast = beforeLast(
 
 // I only return the strings before the last occurence of
 ```
+
+### between
+
+The `between` method returns the portion of a string between two values:
+
+```javascript
+const beforeLast = between(
+  'I only return the strings between the two strings provided',
+  'return',
+  'two'
+);
+
+// I only return the strings before the last occurence of
+```
