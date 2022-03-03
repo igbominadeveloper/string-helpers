@@ -48,3 +48,16 @@ const after = afterLast(
 
 // string passed
 ```
+
+### before
+
+The `before` method returns everything before the given value in a string. The entire string will be returned if the value does not exist within the string:
+
+```javascript
+const beforeWord = before(
+  'I only return the last occurence of the string passed',
+  'occurence'
+);
+
+// I only return the last
+```
