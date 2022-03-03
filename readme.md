@@ -10,7 +10,7 @@ Examples
 
 ### toSnakeCase
 
-The toSnakeCase function returns everything after the given value in a string. The entire string will be returned if the value does not exist within the string:
+The `toSnakeCase` function returns everything after the given value in a string. The entire string will be returned if the value does not exist within the string:
 
 ```javascript
 const wordToSnakeCase = toSnakeCase('I will be in snakecase');
@@ -28,7 +28,7 @@ const wordToSnakeCase = toSnakeCase('I will be in snakecase', '*');
 
 ### after
 
-The after function returns everything after the given value in a string. The entire string will be returned if the value does not exist within the string:
+The `after` function returns everything after the given value in a string. The entire string will be returned if the value does not exist within the string:
 
 ```javascript
 const after = after('I will not come back here with the same', 'back');
@@ -36,4 +36,15 @@ const after = after('I will not come back here with the same', 'back');
 // here with the same
 ```
 
-/
+### after last
+
+The `afterLast` method returns everything after the last occurrence of the given value in a string. The entire string will be returned if the value does not exist within the string:
+
+```javascript
+const after = afterLast(
+  'I only return the last occurence of the string passed',
+  'the'
+);
+
+// string passed
+```
