@@ -6,7 +6,7 @@ describe('After Last', () => {
 
     const afterWord = afterLast(word, 'the');
 
-    expect(afterWord).toBe('string passed');
+    expect(afterWord).toBe(' string passed');
   });
 
   it('returns the full word passed if the search string cannot be found', () => {

@@ -6,7 +6,7 @@ describe('After', () => {
 
     const afterWord = after(word, 'should');
 
-    expect(afterWord).toBe('only return the words after the search string');
+    expect(afterWord).toBe(' only return the words after the search string');
   });
 
   it('returns the full word passed if the search string cannot be found', () => {

@@ -1,5 +1,3 @@
-import { trimEdges } from '../utils';
-
 export const after = (subject: string, search: string): string => {
   if (typeof subject !== 'string' || !search || typeof search !== 'string') {
     return subject;
@@ -16,5 +14,5 @@ export const after = (subject: string, search: string): string => {
   // return the subject after the search string
   const startPosition = position + search.length;
 
-  return trimEdges(subject.substring(startPosition));
+  return subject.substring(startPosition);
 };
