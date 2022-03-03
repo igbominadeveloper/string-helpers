@@ -55,9 +55,22 @@ The `before` method returns everything before the given value in a string. The e
 
 ```javascript
 const beforeWord = before(
-  'I only return the last occurence of the string passed',
+  'I only return the strings before the occurence of the string passed',
   'occurence'
 );
 
-// I only return the last
+// I only return the strings before the
+```
+
+### before last
+
+The `beforeLast` method returns everything before the last occurence of the given value in a string. The entire string will be returned if the value does not exist within the string:
+
+```javascript
+const beforeLast = beforeLast(
+  'I only return the strings before the last occurence of the string passed',
+  'the'
+);
+
+// I only return the strings before the last occurence of
 ```
