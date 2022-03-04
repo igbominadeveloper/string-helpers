@@ -17,18 +17,18 @@ describe('Contains', () => {
     expect(isInTheWord).toBeFalsy();
   });
 
-  it('returns true if all the items in an array are contained in the string', () => {
+  it('returns true if any of the items in an array are contained in the string', () => {
     const word = 'I am the baddest dude on this block';
 
-    const isInTheWord = contains(word, ['baddest', 'the']);
+    const isInTheWord = contains(word, ['baddest', 'dim']);
 
     expect(isInTheWord).toBeTruthy();
   });
 
-  it('returns false if all the items in an array are not contained in the string', () => {
+  it('returns false if none of the items in an array are not contained in the string', () => {
     const word = 'I am the baddest dude on this block';
 
-    const isInTheWord = contains(word, ['baddest', 'the', 'any']);
+    const isInTheWord = contains(word, ['point', 'green', 'any']);
 
     expect(isInTheWord).toBeFalsy();
   });

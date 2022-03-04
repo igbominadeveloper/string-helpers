@@ -11,7 +11,7 @@ export const contains = (
       return false;
     }
 
-    return search.every((item) => contains(subject, item));
+    return search.some((item) => contains(subject, item));
   }
 
   return subject.includes(search);
