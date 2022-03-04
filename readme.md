@@ -158,3 +158,17 @@ const result = finish('I should finish with any string passed', 'passed');
 
 // I should finish with any string passed
 ```
+
+### finish
+
+The `headline` method will convert strings delimited by casing, hyphens, or underscores into a space delimited string with each word's first letter capitalized:
+
+```javascript
+const result = headline('i_should_be_converted_to_an_headline');
+
+// I Should Be Converted To An Headline
+
+const result = headline('Steve Jobs');
+
+// Steve Jobs
+```
