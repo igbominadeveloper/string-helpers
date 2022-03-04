@@ -236,3 +236,21 @@ const result = limit('The quick brown fox jumps over the lazy dog', 20, ' **');
 
 // The quick brown fox **
 ```
+
+### mask
+
+The `mask` masks a portion of a string with a repeated character, and may be used to obfuscate segments of strings such as email addresses and phone numbers:
+
+```javascript
+const result = mask('favour@example.com', '*', 3);
+
+// fav***************
+```
+
+If needed, you provide a negative number as the third argument to the mask method, which will instruct the method to begin masking at the given distance from the end of the string:
+
+```javascript
+const result = mask('taylor@example.com', '*', -15, 3);
+
+// fav***@example.com
+```
