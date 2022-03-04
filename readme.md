@@ -139,4 +139,8 @@ You may also pass an array of values to determine if the given string ends with 
 const endsWith = endsWith('I end with the word camel', ['camel', 'word']);
 
 // true
+
+const endsWith = endsWith('I end with the word camel', ['end', 'word']);
+
+// false
 ```
