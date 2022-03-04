@@ -25,4 +25,12 @@ describe('Camel case', () => {
 
     expect(camelCaseWord).toBe(phraseInCamelCase);
   });
+
+  it('returns the passed value if it is not a string', () => {
+    const word = {} as string;
+
+    const camelCaseWord = toCamelCase(word);
+
+    expect(camelCaseWord).toBe(word);
+  });
 });

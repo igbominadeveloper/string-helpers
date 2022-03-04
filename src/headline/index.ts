@@ -33,6 +33,7 @@ export const headline = (word: string) => {
   return result.flat().join(' ');
 };
 
+//TODO this should be extracted into a separate file
 const convertToTitleCase = (word: string): string => {
   if (!word || typeof word !== 'string') {
     return word;

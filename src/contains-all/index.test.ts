@@ -40,4 +40,12 @@ describe('Contains All', () => {
 
     expect(isInTheWord).toBeFalsy();
   });
+
+  it('it returns false when the value passed is not a string type', () => {
+    const word = {} as string;
+
+    const isInTheWord = containsAll(word, []);
+
+    expect(isInTheWord).toBeFalsy();
+  });
 });

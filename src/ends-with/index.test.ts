@@ -40,4 +40,12 @@ describe('Ends With', () => {
 
     expect(endsWithWord).toBeFalsy();
   });
+
+  it('it returns false when the value passed is not a string type', () => {
+    const word = {} as string;
+
+    const endsWithWord = endsWith(word, 'hello');
+
+    expect(endsWithWord).toBeFalsy();
+  });
 });
