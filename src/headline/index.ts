@@ -1,3 +1,5 @@
+import { toTitleCase } from '../to-title-case';
+
 export const headline = (word: string) => {
   if (!word || typeof word !== 'string') {
     return word;
@@ -20,24 +22,15 @@ export const headline = (word: string) => {
     // check if any of the words contain a hyphen, underscore or space
 
     if (finalResult.length > 0) {
-      return finalResult.map((result) => convertToTitleCase(result));
+      return finalResult.map((result) => toTitleCase(result));
     }
 
     finalResult = part.split(/[-_ ]/);
 
-    const allWords = finalResult.map((result) => convertToTitleCase(result));
+    const allWords = finalResult.map((result) => toTitleCase(result));
 
     return allWords;
   });
 
   return result.flat().join(' ');
-};
-
-//TODO this should be extracted into a separate file
-const convertToTitleCase = (word: string): string => {
-  if (!word || typeof word !== 'string') {
-    return word;
-  }
-
-  return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
 };

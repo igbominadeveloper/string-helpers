@@ -172,3 +172,17 @@ const result = headline('Steve Jobs');
 
 // Steve Jobs
 ```
+
+### title case
+
+The `toTitleCase` method will convert the given string to titlecase:
+
+```javascript
+const result = toTitleCase('I should be converted to title case');
+
+// I Should Be Converted To Title Case
+
+const result = toTitleCase('i_should_be_in_title_case');
+
+// I Should Be Converted To Title Case
+```
