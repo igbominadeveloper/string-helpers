@@ -186,3 +186,17 @@ const result = toTitleCase('i_should_be_in_title_case');
 
 // I Should Be Converted To Title Case
 ```
+
+### is uuid
+
+The `isUuid` method determines if the given string is a valid UUID:
+
+```javascript
+const result = isUuid('a0a2a2d2-0b87-4a18-83f2-2529882be2de');
+
+// true
+
+const result = isUuid('a0a2a2d22529882be2de');
+
+// false
+```
