@@ -107,9 +107,11 @@ The `contains` method determines if the given string contains the given value. T
 const isInString = contains('I should be in camel case', 'be');
 
 // true
+```
 
 You may also pass an array of values to determine if the given string contains any of the values in the array:
 
+```javascript
 const isInString = contains('I should be in camel case', ['be', 'in']);
 
 // true
@@ -133,9 +135,11 @@ The `endsWith` method determines if the given string ends with the given value:
 const endsWith = endsWith('I end with the word camel', 'camel');
 
 // true
+```
 
 You may also pass an array of values to determine if the given string ends with any of the values in the array:
 
+```javascript
 const endsWith = endsWith('I end with the word camel', ['camel', 'word']);
 
 // true
@@ -159,7 +163,7 @@ const result = finish('I should finish with any string passed', 'passed');
 // I should finish with any string passed
 ```
 
-### finish
+### headline
 
 The `headline` method will convert strings delimited by casing, hyphens, or underscores into a space delimited string with each word's first letter capitalized:
 
@@ -168,9 +172,9 @@ const result = headline('i_should_be_converted_to_an_headline');
 
 // I Should Be Converted To An Headline
 
-const result = headline('Steve Jobs');
+const result = headline('SteveJobsAndBillGates');
 
-// Steve Jobs
+// Steve Jobs And Bill Gates
 ```
 
 ### title case
@@ -184,7 +188,7 @@ const result = toTitleCase('I should be converted to title case');
 
 const result = toTitleCase('i_should_be_in_title_case');
 
-// I Should Be Converted To Title Case
+// I Should Be In Title Case
 ```
 
 ### is uuid
