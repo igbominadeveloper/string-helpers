@@ -144,3 +144,17 @@ const endsWith = endsWith('I end with the word camel', ['end', 'word']);
 
 // false
 ```
+
+### finish
+
+The `finish` method adds a single instance of the given value to a string if it does not already end with that value:
+
+```javascript
+const result = finish('I should finish with any string passed', '/');
+
+// I should finish with any string passed/
+
+const result = finish('I should finish with any string passed', 'passed');
+
+// I should finish with any string passed
+```
