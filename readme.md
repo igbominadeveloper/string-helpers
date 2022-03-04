@@ -88,3 +88,13 @@ const beforeLast = between(
 
 // I only return the strings before the last occurence of
 ```
+
+### camel case
+
+The `toCamelCase` method converts the given string to camelCase:
+
+```javascript
+const camelCaseStrings = between('I should be in camel case');
+
+// iShouldBeInCamelCase
+```
