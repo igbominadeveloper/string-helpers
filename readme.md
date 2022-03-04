@@ -218,3 +218,21 @@ const result = toKebabCase('i_should_be_converted_to_kebab_case');
 
 // i-should-be-converted-to-kebab-case
 ```
+
+### limit
+
+The `limit` method truncates the given string to the specified length:
+
+```javascript
+const result = limit('The quick brown fox jumps over the lazy dog', 20);
+
+// The quick brown fox...
+```
+
+You may pass a third argument to the method to change the string that will be appended to the end of the truncated string:
+
+```javascript
+const result = limit('The quick brown fox jumps over the lazy dog', 20, ' **');
+
+// The quick brown fox **
+```
