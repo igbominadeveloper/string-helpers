@@ -124,3 +124,19 @@ const isInString = containsAll('I should be in camel case', ['be', 'camel']);
 
 // true
 ```
+
+### ends with
+
+The `endsWith` method determines if the given string ends with the given value:
+
+```javascript
+const endsWith = endsWith('I end with the word camel', 'camel');
+
+// true
+
+You may also pass an array of values to determine if the given string ends with any of the values in the array:
+
+const endsWith = endsWith('I end with the word camel', ['camel', 'word']);
+
+// true
+```
