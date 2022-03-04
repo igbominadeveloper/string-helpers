@@ -250,7 +250,15 @@ const result = mask('favour@example.com', '*', 3);
 If needed, you provide a negative number as the third argument to the mask method, which will instruct the method to begin masking at the given distance from the end of the string:
 
 ```javascript
-const result = mask('taylor@example.com', '*', -15, 3);
+const result = mask('favour@example.com', '*', -15, 3);
 
 // fav***@example.com
+```
+
+If needed, you could also provide your custom mask, if not it defaults to \*:
+
+```javascript
+const result = mask('favour@example.com', '#', 3);
+
+// fav##############
 ```
