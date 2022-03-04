@@ -98,3 +98,19 @@ const camelCaseStrings = between('I should be in camel case');
 
 // iShouldBeInCamelCase
 ```
+
+### contains
+
+The `contains` method determines if the given string contains the given value. This method is case sensitive:
+
+```javascript
+const isInString = contains('I should be in camel case', 'be');
+
+// true
+
+You may also pass an array of values to determine if the given string contains any of the values in the array:
+
+const isInString = contains('I should be in camel case', ['be', 'in']);
+
+// true
+```
