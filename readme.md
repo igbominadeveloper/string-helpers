@@ -200,3 +200,17 @@ const result = isUuid('a0a2a2d22529882be2de');
 
 // false
 ```
+
+### kebab case
+
+The `toKebabCase` method will convert the given string to kebab-case:
+
+```javascript
+const result = toKebabCase('I should be converted to kebab case');
+
+// i-should-be-converted-to-kebab-case
+
+const result = toKebabCase('i_should_be_converted_to_kebab_case');
+
+// i-should-be-converted-to-kebab-case
+```
