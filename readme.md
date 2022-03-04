@@ -114,3 +114,13 @@ const isInString = contains('I should be in camel case', ['be', 'in']);
 
 // true
 ```
+
+### contains all
+
+The `containsAll` method determines if the given string contains all of the values in a given array:
+
+```javascript
+const isInString = containsAll('I should be in camel case', ['be', 'camel']);
+
+// true
+```
