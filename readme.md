@@ -276,3 +276,21 @@ const result = padBoth('Favour', 10);
 
 // '  Favour  '
 ```
+
+### Random
+
+The `random` method generates random string based on the length passed:
+
+```javascript
+const result = random(10);
+
+// 'kxpje9dcz8'
+```
+
+it also converts negative values to the absolute value and generates the random string
+
+```javascript
+const result = random(-20);
+
+// 'd0yrmbbfhypuj8dyorhs'
+```

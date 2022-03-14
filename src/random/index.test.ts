@@ -8,8 +8,8 @@ describe('Random String', () => {
   });
 
   it('returns the positive length if a negative value length is passed', () => {
-    const randomString = random(-50);
+    const randomString = random(-20);
 
-    expect(randomString.length).toBe(50);
+    expect(randomString.length).toBe(20);
   });
 });
