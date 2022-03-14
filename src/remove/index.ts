@@ -3,6 +3,10 @@ export const remove = (
   value: string | string[],
   ignoreCase: boolean = false
 ): string => {
+  if (typeof string !== 'string') {
+    return string;
+  }
+
   if (Array.isArray(value)) {
     return value.reduce(
       (previous, current) => remove(previous, current),
@@ -10,11 +14,13 @@ export const remove = (
     );
   }
 
-  return string.split('').reduce((previous, current) => {
-    if (current === value) {
+  return [...string].reduce((previous, current) => {
+    const compareCase = ignoreCase ? current.toLowerCase() : current;
+
+    if (compareCase === value) {
       return previous;
     }
 
-    return previous + current;
+    return `${previous}${current}`;
   }, '');
 };
