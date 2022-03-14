@@ -292,5 +292,34 @@ it also converts negative values to the absolute value and generates the random 
 ```javascript
 const result = random(-20);
 
-// 'd0yrmbbfhypuj8dyorhs'
+// 'rd0yrmbbfhypuj8dyorhs'
+```
+
+### Remove
+
+The `remove` method removes the given value or array of values from the string:
+
+```javascript
+const result = remove('Peter Piper picked a peck of pickled peppers.', 'e');
+
+// 'Ptr Pipr pickd a pck of pickld ppprs.'
+```
+
+You can pass an array of values to remove from the given string
+
+```javascript
+const result = remove('Peter Piper picked a peck of pickled peppers.', [
+  'e',
+  'p',
+]);
+
+//TODO update with the correct value 'rd0yrmbbfhypuj8dyorhs'
+```
+
+You may also pass false as a third argument to the remove method to ignore case when removing strings.
+
+```javascript
+const result = remove('Peter Piper picked a peck of pickled peppers.', 'p');
+
+//TODO update with the correct value 'rd0yrmbbfhypuj8dyorhs'
 ```
