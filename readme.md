@@ -1,6 +1,6 @@
 ## Useful string helpers
 
-This is a string library that contains all the functions I wish were in JS. This took inpiration from the laravel string helper methods
+This is a string library that contains all the functions I wish were available in JS. I took inpiration from the laravel string helper methods (here)[https://laravel.com/docs/9.x/helpers#strings]
 
 ## Status Badge
 
