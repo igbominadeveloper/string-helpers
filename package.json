@@ -16,11 +16,21 @@
     "eslint": "^8.9.0",
     "prettier": "^2.5.1"
   },
-  "name": "string-helpers",
-  "version": "1.0.0",
+  "name": "@igbominadeveloper/string-helpers",
+  "version": "0.0.1-alpha",
   "description": "useful string helpers",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "string",
+    "helpers"
+  ],
   "repository": "https://github.com/igbominadeveloper/string-helpers",
+  "bugs": {
+    "url": "https://github.com/igbominadeveloper/string-helpers/issues"
+  },
+  "homepage": "https://github.com/igbominadeveloper/string-helpers#readme",
   "author": "Favour Afolayan <favourafolayan@gmail.com>",
   "license": "MIT"
 }
