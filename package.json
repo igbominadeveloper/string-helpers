@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --forceExit --runInBand",
-    "tsc": "tsc -p",
+    "tsc": "tsc -p .",
     "build": "yarn tsc"
   },
   "dependencies": {
