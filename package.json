@@ -12,7 +12,7 @@
     "build": "yarn tsc"
   },
   "name": "@igbominadeveloper/string-helpers",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2-alpha",
   "description": "useful string helper functions",
   "main": "dist/index.js",
   "keywords": [
